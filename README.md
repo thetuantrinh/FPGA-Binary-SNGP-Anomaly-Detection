@@ -1,4 +1,6 @@
-# Binary-SNGP: Uncertainty-Aware TinyML Anomaly Detection on FPGA for Edge AI in Industrial IoT
+# FPGA-binary-sngp-Anomaly-Detection
+
+**Uncertainty-Aware TinyML Anomaly Detection on FPGA for Edge AI in Industrial IoT**
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 [![Python: 3.9+](https://img.shields.io/badge/Python-3.9%2B-brightgreen.svg)](https://www.python.org/)
@@ -136,8 +138,8 @@ Raw IMU Readings (500 Hz)
 
 ```bash
 # Clone the repository
-git clone https://github.com/tuantrinhthe/binary-sngp.git
-cd binary-sngp
+git clone https://github.com/thetuantrinh/FPGA-binary-sngp-Anomaly-Detection.git
+cd FPGA-binary-sngp-Anomaly-Detection
 
 # Create virtual environment and install dependencies
 python -m venv venv
