@@ -1,0 +1,12 @@
+__pycache__/
+*.pyc
+bsngp/sim/work/
+bsngp/logs/
+plotneuralnet/outputs/
+paper/figures/
+online_datasets/
+*.aux
+*.log
+*.out
+*.cf
+dataset/

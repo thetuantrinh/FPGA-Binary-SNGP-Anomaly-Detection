@@ -1,0 +1,27 @@
+{
+  "channels": [
+    "ax",
+    "ay",
+    "az",
+    "gx",
+    "gy",
+    "gz"
+  ],
+  "means": [
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+  ],
+  "stds": [
+    0.9992551207542419,
+    0.9992551207542419,
+    0.9992551207542419,
+    29.058977127075195,
+    29.058977127075195,
+    29.058977127075195
+  ],
+  "note": "Isotropic normalisation for the orientation-robust model (export_robust/params.npz). Use instead of checkpoints/norm_stats.json when generating the IMU input constants."
+}
