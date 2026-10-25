@@ -124,7 +124,6 @@ Raw IMU Readings (500 Hz)
 ├── checkpoints/                # Normalization parameters (isotropic and per-axis)
 ├── dataset/                    # 12 fan IMU recordings (500 Hz 6-axis vibration data)
 ├── paper/                      # Figure generation scripts matching manuscript.pdf
-├── plotneuralnet/              # LaTeX neural network architecture visualization scripts
 ├── HARDWARE_RUNS_RESULTS.md    # Detailed laboratory execution report from DE0-Nano board
 ├── requirements.txt            # Python dependencies
 └── README.md                   # This document
@@ -239,5 +238,4 @@ If you find this work useful in your research, please cite our paper:
 ## 📜 License & Acknowledgments
 
 * **Code License:** [MIT License](LICENSE).
-* **Network Visualization:** PlotNeuralNet layer styles are licensed under the MIT License (`plotneuralnet/LICENSE.PlotNeuralNet`).
 * **Funding Acknowledgments:** This research is funded by the Vietnam National Foundation for Science and Technology Development (NAFOSTED) under grant number `102.01-2025.100`.
