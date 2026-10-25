@@ -10,8 +10,6 @@
 
 Official implementation and hardware co-design for the paper:  
 **"Binary-SNGP: Uncertainty-Aware TinyML Anomaly Detection on FPGA for Edge AI in Industrial IoT"**  
-*The Tuan Trinh, Nguyen Du, Khoa Nguyen Dang, Xuanque Nguyen* (IEEE SISIMPACT-2027)
-
 ---
 
 ## 🌟 Overview
@@ -57,15 +55,6 @@ Edge nodes in the Industrial Internet of Things (IIoT) monitoring rotating equip
 | **Mahalanobis (DDU)** | 1 | 33 | $1\times$ + Cov. Matrix | 1,417 | 28.34 µs | $0.514 \pm 0.083$ |
 | **Binary-SNGP (Ours)** | **1** | **22** | **35.9 kbit** (Self-contained) | **1,971** | **39.42 µs** | **$\mathbf{0.810 \pm 0.030}$** |
 
-### Real Fan Validation (DE0-Nano Live Test)
-
-| Experimental Condition | Description / Injected State | Windows Logged | % Abnormal ($L > T_L$) | % Unknown ($V > T_V$) | Decision Reliability |
-|---|---|:---:|:---:|:---:|---|
-| **Condition A: Healthy 100%** | Full-speed normal rotation | 940 | **0.00%** | **0.11%** | **Zero False Alarms** |
-| **Condition B: Healthy Stepped** | Stepped speed (75% and 50%) | 940 | **0.00%** | **1.28%** | **Robust to speed shifts** |
-| **Condition C: Abnormal** | Unbalance mass on fan rotor | 940 | **100.00%** | **0.32%** | **100% Fault Detection** |
-| **Condition D: Sensor Fault** | Disconnected / zeroed channel | 903 | **0.00%** | **100.00%** | **100% Flagged Unknown** |
-
 ---
 
 ## 🏗️ Architecture
@@ -101,35 +90,6 @@ Raw IMU Readings (500 Hz)
 
 ---
 
-## 📁 Repository Structure
-
-```
-.
-├── anomaly_detection/          # Data loaders, Z-score normalization, STE binarized layers
-├── bsngp/                      # Core Binary-SNGP algorithms & hardware generators
-│   ├── golden.py               # Bit-exact integer reference specification (Python)
-│   ├── bsngp_model.py          # PyTorch training model, folded BN, low-rank covariance
-│   ├── data.py                 # Dataset splits, synthetic OOD generators, co-sim streams
-│   ├── orientation.py          # SO(3) 3D rotations, field mounting simulations
-│   ├── train_eval.py           # Training pipeline (5 seeds) + rank/K parameter ablations
-│   ├── transfer_orientation.py # Orientation-robust model (isotropic norm + DC removal)
-│   ├── compare_uncertainty.py  # Benchmarking against MC Dropout, Ensembles, Mahalanobis
-│   ├── export_vhdl.py          # Exports PyTorch parameters to synthesizable VHDL packages
-│   ├── rtl/                    # Synthesizable VHDL (bsngp_core.vhd, DE0-Nano top, UART)
-│   ├── tb/ & sim/              # GHDL bit-exact testbenches and automated validation scripts
-│   ├── host/                   # stream_to_board.py: Real-time 500 Hz streaming & JTAG replay
-│   ├── quartus/                # Intel Quartus Prime Lite project, pinout, SDC constraints
-│   ├── release_robust/         # Production-ready orientation-robust RTL package & params
-│   └── export*/                # Exported model weights, parameter arrays, and JSON logs
-├── checkpoints/                # Normalization parameters (isotropic and per-axis)
-├── dataset/                    # 12 fan IMU recordings (500 Hz 6-axis vibration data)
-├── paper/                      # Figure generation scripts matching manuscript.pdf
-├── HARDWARE_RUNS_RESULTS.md    # Detailed laboratory execution report from DE0-Nano board
-├── requirements.txt            # Python dependencies
-└── README.md                   # This document
-```
-
----
 
 ## 🚀 Quick Start
 
@@ -215,23 +175,6 @@ python bsngp/host/stream_to_board.py --port COM3 --csv dataset/valid/abnormal/20
   * `flags[0]`: Abnormal indicator ($L > T_L$)
   * `flags[1]`: Unknown / OOD indicator ($V > T_V$)
   * `flags[2]`: Hardware buffer overrun warning
-
----
-
-## 📖 Citation
-
-If you find this work useful in your research, please cite our paper:
-
-```bibtex
-@inproceedings{trinh2027binarysngp,
-  title     = {Binary-SNGP: Uncertainty-Aware TinyML Anomaly Detection on FPGA for Edge AI in Industrial IoT},
-  author    = {Trinh, The Tuan and Du, Nguyen and Dang, Khoa Nguyen and Nguyen, Xuanque},
-  booktitle = {Proceedings of the IEEE International Conference on Smart Information Systems and Impact (SISIMPACT)},
-  year      = {2027},
-  pages     = {1--6},
-  doi       = {10.1109/SISIMPACT.2027.TODO}
-}
-```
 
 ---
 
