@@ -10,13 +10,14 @@ The FPGA computes exactly the integer function in `golden.py`. GHDL co-simulatio
 
 | Item | Status |
 |---|---|
-| Training (5 seeds) | done, `export/results.md` |
-| Float model vs integer spec | 0 bit / 0 decision mismatches, all seeds |
+| Training (5 seeds) | **DONE**, `export/results.md` |
+| Float model vs integer spec | **0 bit / 0 decision mismatches**, all seeds |
 | RTL vs golden model (GHDL 4.1) | **PASS**: 204/204 windows (core), 7/7 UART packets (top, UART mode), 31/31 windows (top, ROM mode) |
-| Synthesizability (GHDL `--synth`, VHDL-93) | passes, no latches, no warnings |
-| Measured latency (RTL) | 1,778 cycles per window = **35.6 µs @ 50 MHz** (window period 64 ms → 0.06 % duty) |
-| Quartus fit / Fmax / LE count | **not run** (Quartus is not installed here); see "Open items" |
-| Board test | not done (needs Quartus + board) |
+| Synthesizability (GHDL `--synth`, VHDL-93) | **PASS**, no latches, no warnings |
+| Measured latency (RTL & Silicon) | 1,778 cycles (35.6 µs @ 50 MHz) deployed; **1,971 cycles (39.42 µs @ 50 MHz)** robust |
+| Quartus fit / Fmax / LE count | **PASS**: 17,810 LEs (79.8%), 22 multipliers (16.7%), $F_{\max} = 58.11$ MHz (+2.79 ns slack @ 50 MHz) |
+| Board test (JTAG replay & Live Fan) | **PASS**: **2,282 / 2,282 windows bit-exact**; Live fan verified (0% false alarm, 100% fault detection) |
+| Active System Power & Energy | **116.5 mW**, **2.75 µJ per inference** (0.062% duty cycle) |
 
 ## Model (config: `train_eval.py`, exported to `export/params.npz`)
 
