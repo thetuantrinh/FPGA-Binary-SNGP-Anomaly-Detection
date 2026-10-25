@@ -1,4 +1,4 @@
-# FPGA-binary-sngp-Anomaly-Detection
+# FPGA-Binary-SNGP-Anomaly-Detection
 
 **Uncertainty-Aware TinyML Anomaly Detection on FPGA for Edge AI in Industrial IoT**
 
@@ -138,8 +138,8 @@ Raw IMU Readings (500 Hz)
 
 ```bash
 # Clone the repository
-git clone https://github.com/thetuantrinh/FPGA-binary-sngp-Anomaly-Detection.git
-cd FPGA-binary-sngp-Anomaly-Detection
+git clone https://github.com/thetuantrinh/FPGA-Binary-SNGP-Anomaly-Detection.git
+cd FPGA-Binary-SNGP-Anomaly-Detection
 
 # Create virtual environment and install dependencies
 python -m venv venv
