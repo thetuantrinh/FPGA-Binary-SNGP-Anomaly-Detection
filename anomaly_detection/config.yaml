@@ -1,0 +1,47 @@
+# Configuration for FPGA Anomaly Detection Pipeline
+
+data:
+  raw_dir: "dataset"
+  symlink_dir: "data"
+  processed_dir: "data/processed"
+  stats_file: "checkpoints/norm_stats.json"
+  feature_cols: ["ax", "ay", "az", "gx", "gy", "gz"]
+  sampling_rate_hz: 500
+  default_window_size: 64      # 128 ms
+  default_stride: 32           # 50% overlap for training
+  test_stride: 32              # 50% overlap for test/val evaluation
+
+split:
+  train_normal:
+    - "train/normal/2026-09-17_10-45-32.csv"
+    - "train/normal/2026-09-17_10-45-55.csv"
+    - "train/normal/2026-09-17_10-46-07.csv"
+    - "train/normal/2026-09-17_10-46-24.csv"
+  train_abnormal:
+    - "train/abnormal/2026-09-17_10-58-26.csv"
+    - "train/abnormal/2026-09-17_10-58-46.csv"
+    - "train/abnormal/2026-09-17_10-58-58.csv"
+    - "train/abnormal/2026-09-17_10-59-12.csv"
+  val_normal:
+    - "valid/normal/2026-09-17_10-46-36.csv"
+  val_abnormal:
+    - "valid/abnormal/2026-09-17_10-59-49.csv"
+  test_normal:
+    - "valid/normal/2026-09-17_10-57-42.csv"
+  test_abnormal:
+    - "valid/abnormal/2026-09-17_10-59-27.csv"
+
+training:
+  seed: 42
+  batch_size: 128
+  num_epochs: 40
+  learning_rate: 0.001
+  weight_decay: 0.0001
+  patience: 10
+  use_class_weights: true
+  num_workers: 2
+
+hardware:
+  require_cuda: true
+  target_fpga: "Xilinx Zynq-7020 / UltraScale+ / Artix-7"
+  clock_freq_mhz: 100

@@ -1,0 +1,5 @@
+Binary-SNGP: Uncertainty-Aware TinyML Anomaly Detection on FPGA for Edge AI in Industrial IoT
+
+Graphical Abstract Description:
+
+This graphical abstract illustrates Binary-SNGP, an ultra-low-power TinyML edge architecture co-designed for single-pass, uncertainty-aware vibration anomaly detection on resource-constrained FPGAs. The hardware pipeline couples a sensor-orientation-robust normalizer with a multiplierless 1-bit CNN backbone and an integer Gaussian Process head employing binary Random Fourier Features and a rank-16 variance engine. Dual integer comparators simultaneously evaluate failure conditions and out-of-distribution (OOD) uncertainty in a single pass without multi-sampling overhead, dispatching 12-byte telemetry packets over IIoT channels. Verified bit-exact across 2,282 physical recordings on an Intel Cyclone IV FPGA, the accelerator executes in 39.42 µs (1,971 cycles @ 50 MHz) consuming only 116.5 mW (2.75 µJ per inference) while achieving a superior 0.810 OOD AUROC.

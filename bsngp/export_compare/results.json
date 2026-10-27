@@ -1,0 +1,2448 @@
+{
+  "robust": {
+    "per_seed": [
+      {
+        "deterministic": {
+          "id_test_acc": 1.0,
+          "id_test_ece": 3.933906555175781e-06,
+          "field_normal_abnormal_rate": 0.0,
+          "field_normal_unknown_rate": 0.01125,
+          "ood": {
+            "uav_6dof": {
+              "auroc": 0.8120659722222222,
+              "fpr95": 0.3541666666666667,
+              "flagged_at_99pct": 0.0
+            },
+            "motor_acc_only": {
+              "auroc": 0.8379947916666667,
+              "fpr95": 0.3541666666666667,
+              "flagged_at_99pct": 0.12
+            },
+            "adi_cbm_acc_only": {
+              "auroc": 0.8120659722222222,
+              "fpr95": 0.3541666666666667,
+              "flagged_at_99pct": 0.0
+            },
+            "fault_stuck": {
+              "auroc": 0.828342013888889,
+              "fpr95": 0.3541666666666667,
+              "flagged_at_99pct": 0.16981132075471697
+            },
+            "fault_zero_output": {
+              "auroc": 0.8120659722222222,
+              "fpr95": 0.3541666666666667,
+              "flagged_at_99pct": 0.0
+            },
+            "fault_noise_burst": {
+              "auroc": 0.5263446671907757,
+              "fpr95": 1.0,
+              "flagged_at_99pct": 0.18867924528301888
+            },
+            "fault_spikes": {
+              "auroc": 0.6264822458071279,
+              "fpr95": 1.0,
+              "flagged_at_99pct": 0.44339622641509435
+            }
+          },
+          "mean_auroc": 0.7507659478885893
+        },
+        "mc_dropout": {
+          "id_test_acc": 1.0,
+          "id_test_ece": 7.569789886474609e-06,
+          "field_normal_abnormal_rate": 0.0,
+          "field_normal_unknown_rate": 0.0025,
+          "ood": {
+            "uav_6dof": {
+              "auroc": 0.4292404513888889,
+              "fpr95": 0.9131944444444444,
+              "flagged_at_99pct": 0.0
+            },
+            "motor_acc_only": {
+              "auroc": 0.4969227430555556,
+              "fpr95": 0.9149305555555556,
+              "flagged_at_99pct": 0.125
+            },
+            "adi_cbm_acc_only": {
+              "auroc": 0.4458420138888889,
+              "fpr95": 0.9392361111111112,
+              "flagged_at_99pct": 0.0
+            },
+            "fault_stuck": {
+              "auroc": 0.530504782494759,
+              "fpr95": 0.9366319444444444,
+              "flagged_at_99pct": 0.16037735849056603
+            },
+            "fault_zero_output": {
+              "auroc": 0.4027777777777778,
+              "fpr95": 0.9375,
+              "flagged_at_99pct": 0.0
+            },
+            "fault_noise_burst": {
+              "auroc": 0.5681096042976939,
+              "fpr95": 0.9340277777777778,
+              "flagged_at_99pct": 0.03773584905660377
+            },
+            "fault_spikes": {
+              "auroc": 0.7276516640461216,
+              "fpr95": 0.9210069444444444,
+              "flagged_at_99pct": 0.41509433962264153
+            }
+          },
+          "mean_auroc": 0.5144355767070979
+        },
+        "deep_ensemble": {
+          "id_test_acc": 1.0,
+          "id_test_ece": 4.231929779052734e-06,
+          "field_normal_abnormal_rate": 0.0,
+          "field_normal_unknown_rate": 0.00125,
+          "ood": {
+            "uav_6dof": {
+              "auroc": 0.6812543402777779,
+              "fpr95": 0.4331597222222222,
+              "flagged_at_99pct": 0.0
+            },
+            "motor_acc_only": {
+              "auroc": 0.7773480902777777,
+              "fpr95": 0.4331597222222222,
+              "flagged_at_99pct": 0.145
+            },
+            "adi_cbm_acc_only": {
+              "auroc": 0.6805555555555556,
+              "fpr95": 0.4331597222222222,
+              "flagged_at_99pct": 0.0
+            },
+            "fault_stuck": {
+              "auroc": 0.7709643605870021,
+              "fpr95": 0.4331597222222222,
+              "flagged_at_99pct": 0.2830188679245283
+            },
+            "fault_zero_output": {
+              "auroc": 0.6805555555555556,
+              "fpr95": 0.4331597222222222,
+              "flagged_at_99pct": 0.0
+            },
+            "fault_noise_burst": {
+              "auroc": 0.6360103839098532,
+              "fpr95": 0.9809027777777778,
+              "flagged_at_99pct": 0.2169811320754717
+            },
+            "fault_spikes": {
+              "auroc": 0.6245700668238994,
+              "fpr95": 0.9973958333333334,
+              "flagged_at_99pct": 0.42452830188679247
+            }
+          },
+          "mean_auroc": 0.6930369075696315
+        },
+        "mahalanobis": {
+          "id_test_acc": 1.0,
+          "id_test_ece": 3.933906555175781e-06,
+          "field_normal_abnormal_rate": 0.0,
+          "field_normal_unknown_rate": 0.00625,
+          "ood": {
+            "uav_6dof": {
+              "auroc": 0.8025173611111112,
+              "fpr95": 0.3637152777777778,
+              "flagged_at_99pct": 0.0
+            },
+            "motor_acc_only": {
+              "auroc": 0.8296614583333334,
+              "fpr95": 0.3637152777777778,
+              "flagged_at_99pct": 0.12
+            },
+            "adi_cbm_acc_only": {
+              "auroc": 0.8025173611111112,
+              "fpr95": 0.3637152777777778,
+              "flagged_at_99pct": 0.0
+            },
+            "fault_stuck": {
+              "auroc": 0.8207833791928721,
+              "fpr95": 0.3637152777777778,
+              "flagged_at_99pct": 0.16037735849056603
+            },
+            "fault_zero_output": {
+              "auroc": 0.8025173611111112,
+              "fpr95": 0.3637152777777778,
+              "flagged_at_99pct": 0.0
+            },
+            "fault_noise_burst": {
+              "auroc": 0.5705909329140461,
+              "fpr95": 1.0,
+              "flagged_at_99pct": 0.16037735849056603
+            },
+            "fault_spikes": {
+              "auroc": 0.6317806603773585,
+              "fpr95": 1.0,
+              "flagged_at_99pct": 0.41509433962264153
+            }
+          },
+          "mean_auroc": 0.7514812163072776
+        },
+        "bsngp": {
+          "id_test_acc": 1.0,
+          "id_test_ece": 0.007925634760364337,
+          "field_normal_abnormal_rate": 0.0,
+          "field_normal_unknown_rate": 0.0,
+          "ood": {
+            "uav_6dof": {
+              "auroc": 0.8758420138888889,
+              "fpr95": 0.7586805555555556,
+              "flagged_at_99pct": 0.79
+            },
+            "motor_acc_only": {
+              "auroc": 0.5035416666666667,
+              "fpr95": 0.9192708333333334,
+              "flagged_at_99pct": 0.11
+            },
+            "adi_cbm_acc_only": {
+              "auroc": 0.9991319444444444,
+              "fpr95": 0.0008680555555555555,
+              "flagged_at_99pct": 1.0
+            },
+            "fault_stuck": {
+              "auroc": 0.9970928328092242,
+              "fpr95": 0.0008680555555555555,
+              "flagged_at_99pct": 0.9905660377358491
+            },
+            "fault_zero_output": {
+              "auroc": 0.9991319444444444,
+              "fpr95": 0.0008680555555555555,
+              "flagged_at_99pct": 1.0
+            },
+            "fault_noise_burst": {
+              "auroc": 0.46001621462264153,
+              "fpr95": 0.9157986111111112,
+              "flagged_at_99pct": 0.0
+            },
+            "fault_spikes": {
+              "auroc": 0.638479428721174,
+              "fpr95": 0.8506944444444444,
+              "flagged_at_99pct": 0.3113207547169811
+            }
+          },
+          "mean_auroc": 0.7818908636567835
+        }
+      },
+      {
+        "deterministic": {
+          "id_test_acc": 1.0,
+          "id_test_ece": 4.112720489501953e-06,
+          "field_normal_abnormal_rate": 0.0,
+          "field_normal_unknown_rate": 0.02,
+          "ood": {
+            "uav_6dof": {
+              "auroc": 0.15897352430555556,
+              "fpr95": 1.0,
+              "flagged_at_99pct": 0.0
+            },
+            "motor_acc_only": {
+              "auroc": 0.32265190972222224,
+              "fpr95": 1.0,
+              "flagged_at_99pct": 0.14
+            },
+            "adi_cbm_acc_only": {
+              "auroc": 0.15494791666666669,
+              "fpr95": 1.0,
+              "flagged_at_99pct": 0.0
+            },
+            "fault_stuck": {
+              "auroc": 0.37756731525157233,
+              "fpr95": 1.0,
+              "flagged_at_99pct": 0.2358490566037736
+            },
+            "fault_zero_output": {
+              "auroc": 0.15494791666666669,
+              "fpr95": 1.0,
+              "flagged_at_99pct": 0.0
+            },
+            "fault_noise_burst": {
+              "auroc": 0.7423103380503145,
+              "fpr95": 0.6779513888888888,
+              "flagged_at_99pct": 0.11320754716981132
+            },
+            "fault_spikes": {
+              "auroc": 0.8056988666142559,
+              "fpr95": 0.6779513888888888,
+              "flagged_at_99pct": 0.4339622641509434
+            }
+          },
+          "mean_auroc": 0.3881568267538934
+        },
+        "mc_dropout": {
+          "id_test_acc": 1.0,
+          "id_test_ece": 5.900859832763672e-06,
+          "field_normal_abnormal_rate": 0.0,
+          "field_normal_unknown_rate": 0.0075,
+          "ood": {
+            "uav_6dof": {
+              "auroc": 0.4802256944444445,
+              "fpr95": 0.9123263888888888,
+              "flagged_at_99pct": 0.01
+            },
+            "motor_acc_only": {
+              "auroc": 0.6213107638888888,
+              "fpr95": 0.8993055555555556,
+              "flagged_at_99pct": 0.14
+            },
+            "adi_cbm_acc_only": {
+              "auroc": 0.4938324652777778,
+              "fpr95": 0.8836805555555556,
+              "flagged_at_99pct": 0.01
+            },
+            "fault_stuck": {
+              "auroc": 0.5973941954926625,
+              "fpr95": 0.8967013888888888,
+              "flagged_at_99pct": 0.18867924528301888
+            },
+            "fault_zero_output": {
+              "auroc": 0.5051264412997903,
+              "fpr95": 0.9322916666666666,
+              "flagged_at_99pct": 0.009433962264150943
+            },
+            "fault_noise_burst": {
+              "auroc": 0.5191054114255765,
+              "fpr95": 0.9765625,
+              "flagged_at_99pct": 0.03773584905660377
+            },
+            "fault_spikes": {
+              "auroc": 0.702412539308176,
+              "fpr95": 0.9522569444444444,
+              "flagged_at_99pct": 0.4339622641509434
+            }
+          },
+          "mean_auroc": 0.5599153587339024
+        },
+        "deep_ensemble": {
+          "id_test_acc": 1.0,
+          "id_test_ece": 4.708766937255859e-06,
+          "field_normal_abnormal_rate": 0.0,
+          "field_normal_unknown_rate": 0.0,
+          "ood": {
+            "uav_6dof": {
+              "auroc": 0.15260199652777776,
+              "fpr95": 0.9583333333333334,
+              "flagged_at_99pct": 0.0
+            },
+            "motor_acc_only": {
+              "auroc": 0.4521506076388889,
+              "fpr95": 0.9583333333333334,
+              "flagged_at_99pct": 0.145
+            },
+            "adi_cbm_acc_only": {
+              "auroc": 0.1506076388888889,
+              "fpr95": 0.9583333333333334,
+              "flagged_at_99pct": 0.0
+            },
+            "fault_stuck": {
+              "auroc": 0.39100170335429774,
+              "fpr95": 0.9583333333333334,
+              "flagged_at_99pct": 0.2830188679245283
+            },
+            "fault_zero_output": {
+              "auroc": 0.1506076388888889,
+              "fpr95": 0.9583333333333334,
+              "flagged_at_99pct": 0.0
+            },
+            "fault_noise_burst": {
+              "auroc": 0.7521701388888888,
+              "fpr95": 0.6753472222222222,
+              "flagged_at_99pct": 0.12264150943396226
+            },
+            "fault_spikes": {
+              "auroc": 0.7682864910901468,
+              "fpr95": 0.9670138888888888,
+              "flagged_at_99pct": 0.42452830188679247
+            }
+          },
+          "mean_auroc": 0.40248945932539687
+        },
+        "mahalanobis": {
+          "id_test_acc": 1.0,
+          "id_test_ece": 4.112720489501953e-06,
+          "field_normal_abnormal_rate": 0.0,
+          "field_normal_unknown_rate": 0.00125,
+          "ood": {
+            "uav_6dof": {
+              "auroc": 0.78087890625,
+              "fpr95": 0.375,
+              "flagged_at_99pct": 0.0
+            },
+            "motor_acc_only": {
+              "auroc": 0.8250998263888889,
+              "fpr95": 0.375,
+              "flagged_at_99pct": 0.115
+            },
+            "adi_cbm_acc_only": {
+              "auroc": 0.7799479166666666,
+              "fpr95": 0.375,
+              "flagged_at_99pct": 0.0
+            },
+            "fault_stuck": {
+              "auroc": 0.8372969077568134,
+              "fpr95": 0.375,
+              "flagged_at_99pct": 0.2358490566037736
+            },
+            "fault_zero_output": {
+              "auroc": 0.7799479166666666,
+              "fpr95": 0.375,
+              "flagged_at_99pct": 0.0
+            },
+            "fault_noise_burst": {
+              "auroc": 0.519781020702306,
+              "fpr95": 1.0,
+              "flagged_at_99pct": 0.11320754716981132
+            },
+            "fault_spikes": {
+              "auroc": 0.6342128537735849,
+              "fpr95": 1.0,
+              "flagged_at_99pct": 0.3867924528301887
+            }
+          },
+          "mean_auroc": 0.736737906886418
+        },
+        "bsngp": {
+          "id_test_acc": 1.0,
+          "id_test_ece": 0.008140429016502602,
+          "field_normal_abnormal_rate": 0.0,
+          "field_normal_unknown_rate": 0.00375,
+          "ood": {
+            "uav_6dof": {
+              "auroc": 0.945275607638889,
+              "fpr95": 0.390625,
+              "flagged_at_99pct": 0.79
+            },
+            "motor_acc_only": {
+              "auroc": 0.8209157986111111,
+              "fpr95": 0.6527777777777778,
+              "flagged_at_99pct": 0.415
+            },
+            "adi_cbm_acc_only": {
+              "auroc": 1.0,
+              "fpr95": 0.0,
+              "flagged_at_99pct": 1.0
+            },
+            "fault_stuck": {
+              "auroc": 0.9998935403563941,
+              "fpr95": 0.0008680555555555555,
+              "flagged_at_99pct": 1.0
+            },
+            "fault_zero_output": {
+              "auroc": 1.0,
+              "fpr95": 0.0,
+              "flagged_at_99pct": 1.0
+            },
+            "fault_noise_burst": {
+              "auroc": 0.34765625,
+              "fpr95": 0.9956597222222222,
+              "flagged_at_99pct": 0.009433962264150943
+            },
+            "fault_spikes": {
+              "auroc": 0.5299765788784068,
+              "fpr95": 0.9921875,
+              "flagged_at_99pct": 0.42452830188679247
+            }
+          },
+          "mean_auroc": 0.8062453964978288
+        }
+      },
+      {
+        "deterministic": {
+          "id_test_acc": 1.0,
+          "id_test_ece": 5.4836273193359375e-06,
+          "field_normal_abnormal_rate": 0.0,
+          "field_normal_unknown_rate": 0.00125,
+          "ood": {
+            "uav_6dof": {
+              "auroc": 0.7994791666666667,
+              "fpr95": 0.3689236111111111,
+              "flagged_at_99pct": 0.0
+            },
+            "motor_acc_only": {
+              "auroc": 0.8391710069444446,
+              "fpr95": 0.3689236111111111,
+              "flagged_at_99pct": 0.13
+            },
+            "adi_cbm_acc_only": {
+              "auroc": 0.7994791666666667,
+              "fpr95": 0.3689236111111111,
+              "flagged_at_99pct": 0.0
+            },
+            "fault_stuck": {
+              "auroc": 0.8301477332285114,
+              "fpr95": 0.3689236111111111,
+              "flagged_at_99pct": 0.18867924528301888
+            },
+            "fault_zero_output": {
+              "auroc": 0.7994791666666667,
+              "fpr95": 0.3689236111111111,
+              "flagged_at_99pct": 0.0
+            },
+            "fault_noise_burst": {
+              "auroc": 0.5858392295597484,
+              "fpr95": 1.0,
+              "flagged_at_99pct": 0.2641509433962264
+            },
+            "fault_spikes": {
+              "auroc": 0.6381436713836478,
+              "fpr95": 1.0,
+              "flagged_at_99pct": 0.4528301886792453
+            }
+          },
+          "mean_auroc": 0.7559627344451931
+        },
+        "mc_dropout": {
+          "id_test_acc": 1.0,
+          "id_test_ece": 6.9141387939453125e-06,
+          "field_normal_abnormal_rate": 0.0,
+          "field_normal_unknown_rate": 0.00625,
+          "ood": {
+            "uav_6dof": {
+              "auroc": 0.4441427951388889,
+              "fpr95": 0.9401041666666666,
+              "flagged_at_99pct": 0.005
+            },
+            "motor_acc_only": {
+              "auroc": 0.5065060763888889,
+              "fpr95": 0.9166666666666666,
+              "flagged_at_99pct": 0.115
+            },
+            "adi_cbm_acc_only": {
+              "auroc": 0.44400607638888884,
+              "fpr95": 0.9366319444444444,
+              "flagged_at_99pct": 0.005
+            },
+            "fault_stuck": {
+              "auroc": 0.5524764150943396,
+              "fpr95": 0.9288194444444444,
+              "flagged_at_99pct": 0.1792452830188679
+            },
+            "fault_zero_output": {
+              "auroc": 0.4691676493710692,
+              "fpr95": 0.9348958333333334,
+              "flagged_at_99pct": 0.018867924528301886
+            },
+            "fault_noise_burst": {
+              "auroc": 0.6443674659329139,
+              "fpr95": 0.921875,
+              "flagged_at_99pct": 0.14150943396226415
+            },
+            "fault_spikes": {
+              "auroc": 0.7278482049266248,
+              "fpr95": 0.8324652777777778,
+              "flagged_at_99pct": 0.4339622641509434
+            }
+          },
+          "mean_auroc": 0.5412163833202306
+        },
+        "deep_ensemble": {
+          "id_test_acc": 1.0,
+          "id_test_ece": 4.649162292480469e-06,
+          "field_normal_abnormal_rate": 0.0,
+          "field_normal_unknown_rate": 0.0,
+          "ood": {
+            "uav_6dof": {
+              "auroc": 0.20789930555555558,
+              "fpr95": 0.9010416666666666,
+              "flagged_at_99pct": 0.0
+            },
+            "motor_acc_only": {
+              "auroc": 0.5825564236111112,
+              "fpr95": 0.9010416666666666,
+              "flagged_at_99pct": 0.275
+            },
+            "adi_cbm_acc_only": {
+              "auroc": 0.20789930555555558,
+              "fpr95": 0.9010416666666666,
+              "flagged_at_99pct": 0.0
+            },
+            "fault_stuck": {
+              "auroc": 0.43207874737945495,
+              "fpr95": 0.9010416666666666,
+              "flagged_at_99pct": 0.2830188679245283
+            },
+            "fault_zero_output": {
+              "auroc": 0.20789930555555558,
+              "fpr95": 0.9010416666666666,
+              "flagged_at_99pct": 0.0
+            },
+            "fault_noise_burst": {
+              "auroc": 0.7771594929245282,
+              "fpr95": 0.6319444444444444,
+              "flagged_at_99pct": 0.1320754716981132
+            },
+            "fault_spikes": {
+              "auroc": 0.7948768343815514,
+              "fpr95": 0.9522569444444444,
+              "flagged_at_99pct": 0.42452830188679247
+            }
+          },
+          "mean_auroc": 0.458624202137616
+        },
+        "mahalanobis": {
+          "id_test_acc": 1.0,
+          "id_test_ece": 5.4836273193359375e-06,
+          "field_normal_abnormal_rate": 0.0,
+          "field_normal_unknown_rate": 0.00125,
+          "ood": {
+            "uav_6dof": {
+              "auroc": 0.1684027777777778,
+              "fpr95": 1.0,
+              "flagged_at_99pct": 0.0
+            },
+            "motor_acc_only": {
+              "auroc": 0.3364626736111111,
+              "fpr95": 1.0,
+              "flagged_at_99pct": 0.135
+            },
+            "adi_cbm_acc_only": {
+              "auroc": 0.1684027777777778,
+              "fpr95": 1.0,
+              "flagged_at_99pct": 0.0
+            },
+            "fault_stuck": {
+              "auroc": 0.3694313417190776,
+              "fpr95": 1.0,
+              "flagged_at_99pct": 0.20754716981132076
+            },
+            "fault_zero_output": {
+              "auroc": 0.1684027777777778,
+              "fpr95": 1.0,
+              "flagged_at_99pct": 0.0
+            },
+            "fault_noise_burst": {
+              "auroc": 0.7920802214360587,
+              "fpr95": 0.6631944444444444,
+              "flagged_at_99pct": 0.27358490566037735
+            },
+            "fault_spikes": {
+              "auroc": 0.8151041666666667,
+              "fpr95": 0.6631944444444444,
+              "flagged_at_99pct": 0.4339622641509434
+            }
+          },
+          "mean_auroc": 0.4026123909666068
+        },
+        "bsngp": {
+          "id_test_acc": 1.0,
+          "id_test_ece": 0.017750819780025972,
+          "field_normal_abnormal_rate": 0.0,
+          "field_normal_unknown_rate": 0.0,
+          "ood": {
+            "uav_6dof": {
+              "auroc": 0.9647395833333333,
+              "fpr95": 0.2421875,
+              "flagged_at_99pct": 0.795
+            },
+            "motor_acc_only": {
+              "auroc": 0.6976736111111111,
+              "fpr95": 0.8463541666666666,
+              "flagged_at_99pct": 0.135
+            },
+            "adi_cbm_acc_only": {
+              "auroc": 1.0,
+              "fpr95": 0.0,
+              "flagged_at_99pct": 1.0
+            },
+            "fault_stuck": {
+              "auroc": 1.0,
+              "fpr95": 0.0,
+              "flagged_at_99pct": 1.0
+            },
+            "fault_zero_output": {
+              "auroc": 1.0,
+              "fpr95": 0.0,
+              "flagged_at_99pct": 1.0
+            },
+            "fault_noise_burst": {
+              "auroc": 0.5136063613731656,
+              "fpr95": 0.9314236111111112,
+              "flagged_at_99pct": 0.0
+            },
+            "fault_spikes": {
+              "auroc": 0.6745405856918238,
+              "fpr95": 0.8880208333333334,
+              "flagged_at_99pct": 0.37735849056603776
+            }
+          },
+          "mean_auroc": 0.835794305929919
+        }
+      },
+      {
+        "deterministic": {
+          "id_test_acc": 1.0,
+          "id_test_ece": 5.125999450683594e-06,
+          "field_normal_abnormal_rate": 0.0,
+          "field_normal_unknown_rate": 0.0,
+          "ood": {
+            "uav_6dof": {
+              "auroc": 0.16102430555555558,
+              "fpr95": 1.0,
+              "flagged_at_99pct": 0.0
+            },
+            "motor_acc_only": {
+              "auroc": 0.261640625,
+              "fpr95": 1.0,
+              "flagged_at_99pct": 0.115
+            },
+            "adi_cbm_acc_only": {
+              "auroc": 0.16102430555555558,
+              "fpr95": 1.0,
+              "flagged_at_99pct": 0.0
+            },
+            "fault_stuck": {
+              "auroc": 0.3801919549266247,
+              "fpr95": 1.0,
+              "flagged_at_99pct": 0.19811320754716982
+            },
+            "fault_zero_output": {
+              "auroc": 0.16102430555555558,
+              "fpr95": 1.0,
+              "flagged_at_99pct": 0.0
+            },
+            "fault_noise_burst": {
+              "auroc": 0.7911875982704402,
+              "fpr95": 0.6614583333333334,
+              "flagged_at_99pct": 0.3018867924528302
+            },
+            "fault_spikes": {
+              "auroc": 0.7908190841194969,
+              "fpr95": 0.6614583333333334,
+              "flagged_at_99pct": 0.4339622641509434
+            }
+          },
+          "mean_auroc": 0.3867017398547469
+        },
+        "mc_dropout": {
+          "id_test_acc": 1.0,
+          "id_test_ece": 6.973743438720703e-06,
+          "field_normal_abnormal_rate": 0.0,
+          "field_normal_unknown_rate": 0.02375,
+          "ood": {
+            "uav_6dof": {
+              "auroc": 0.5670225694444445,
+              "fpr95": 0.8880208333333334,
+              "flagged_at_99pct": 0.015
+            },
+            "motor_acc_only": {
+              "auroc": 0.6667144097222222,
+              "fpr95": 0.8958333333333334,
+              "flagged_at_99pct": 0.165
+            },
+            "adi_cbm_acc_only": {
+              "auroc": 0.5374913194444444,
+              "fpr95": 0.8828125,
+              "flagged_at_99pct": 0.01
+            },
+            "fault_stuck": {
+              "auroc": 0.6259499475890986,
+              "fpr95": 0.9175347222222222,
+              "flagged_at_99pct": 0.16037735849056603
+            },
+            "fault_zero_output": {
+              "auroc": 0.5348286818658281,
+              "fpr95": 0.9097222222222222,
+              "flagged_at_99pct": 0.018867924528301886
+            },
+            "fault_noise_burst": {
+              "auroc": 0.5012897995283019,
+              "fpr95": 0.9791666666666666,
+              "flagged_at_99pct": 0.0
+            },
+            "fault_spikes": {
+              "auroc": 0.6631780660377359,
+              "fpr95": 0.9592013888888888,
+              "flagged_at_99pct": 0.4339622641509434
+            }
+          },
+          "mean_auroc": 0.5852106848045822
+        },
+        "deep_ensemble": {
+          "id_test_acc": 1.0,
+          "id_test_ece": 4.5299530029296875e-06,
+          "field_normal_abnormal_rate": 0.0,
+          "field_normal_unknown_rate": 0.0,
+          "ood": {
+            "uav_6dof": {
+              "auroc": 0.1840277777777778,
+              "fpr95": 0.9227430555555556,
+              "flagged_at_99pct": 0.0
+            },
+            "motor_acc_only": {
+              "auroc": 0.3013346354166667,
+              "fpr95": 0.9227430555555556,
+              "flagged_at_99pct": 0.115
+            },
+            "adi_cbm_acc_only": {
+              "auroc": 0.1840277777777778,
+              "fpr95": 0.9227430555555556,
+              "flagged_at_99pct": 0.0
+            },
+            "fault_stuck": {
+              "auroc": 0.41496331236897277,
+              "fpr95": 0.9227430555555556,
+              "flagged_at_99pct": 0.2830188679245283
+            },
+            "fault_zero_output": {
+              "auroc": 0.1840277777777778,
+              "fpr95": 0.9227430555555556,
+              "flagged_at_99pct": 0.0
+            },
+            "fault_noise_burst": {
+              "auroc": 0.7296416404612159,
+              "fpr95": 0.9574652777777778,
+              "flagged_at_99pct": 0.2169811320754717
+            },
+            "fault_spikes": {
+              "auroc": 0.7723483359538783,
+              "fpr95": 0.9487847222222222,
+              "flagged_at_99pct": 0.4056603773584906
+            }
+          },
+          "mean_auroc": 0.3957673225048667
+        },
+        "mahalanobis": {
+          "id_test_acc": 1.0,
+          "id_test_ece": 5.125999450683594e-06,
+          "field_normal_abnormal_rate": 0.0,
+          "field_normal_unknown_rate": 0.0,
+          "ood": {
+            "uav_6dof": {
+              "auroc": 0.16102430555555558,
+              "fpr95": 1.0,
+              "flagged_at_99pct": 0.0
+            },
+            "motor_acc_only": {
+              "auroc": 0.2613541666666667,
+              "fpr95": 1.0,
+              "flagged_at_99pct": 0.11
+            },
+            "adi_cbm_acc_only": {
+              "auroc": 0.16102430555555558,
+              "fpr95": 1.0,
+              "flagged_at_99pct": 0.0
+            },
+            "fault_stuck": {
+              "auroc": 0.3788571147798742,
+              "fpr95": 1.0,
+              "flagged_at_99pct": 0.20754716981132076
+            },
+            "fault_zero_output": {
+              "auroc": 0.16102430555555558,
+              "fpr95": 1.0,
+              "flagged_at_99pct": 0.0
+            },
+            "fault_noise_burst": {
+              "auroc": 0.7755748820754718,
+              "fpr95": 0.6779513888888888,
+              "flagged_at_99pct": 0.1509433962264151
+            },
+            "fault_spikes": {
+              "auroc": 0.7801731197589099,
+              "fpr95": 0.6779513888888888,
+              "flagged_at_99pct": 0.36792452830188677
+            }
+          },
+          "mean_auroc": 0.3827188857067985
+        },
+        "bsngp": {
+          "id_test_acc": 1.0,
+          "id_test_ece": 0.005855517418182263,
+          "field_normal_abnormal_rate": 0.0,
+          "field_normal_unknown_rate": 0.0,
+          "ood": {
+            "uav_6dof": {
+              "auroc": 0.9467209201388889,
+              "fpr95": 0.3776041666666667,
+              "flagged_at_99pct": 0.79
+            },
+            "motor_acc_only": {
+              "auroc": 0.581252170138889,
+              "fpr95": 0.8602430555555556,
+              "flagged_at_99pct": 0.115
+            },
+            "adi_cbm_acc_only": {
+              "auroc": 1.0,
+              "fpr95": 0.0,
+              "flagged_at_99pct": 1.0
+            },
+            "fault_stuck": {
+              "auroc": 0.99994267557652,
+              "fpr95": 0.0,
+              "flagged_at_99pct": 1.0
+            },
+            "fault_zero_output": {
+              "auroc": 1.0,
+              "fpr95": 0.0,
+              "flagged_at_99pct": 1.0
+            },
+            "fault_noise_burst": {
+              "auroc": 0.3343938351677149,
+              "fpr95": 0.9878472222222222,
+              "flagged_at_99pct": 0.0
+            },
+            "fault_spikes": {
+              "auroc": 0.5595764544025157,
+              "fpr95": 0.9921875,
+              "flagged_at_99pct": 0.39622641509433965
+            }
+          },
+          "mean_auroc": 0.7745551507749325
+        }
+      },
+      {
+        "deterministic": {
+          "id_test_acc": 1.0,
+          "id_test_ece": 5.364418029785156e-06,
+          "field_normal_abnormal_rate": 0.0,
+          "field_normal_unknown_rate": 0.0,
+          "ood": {
+            "uav_6dof": {
+              "auroc": 0.1467013888888889,
+              "fpr95": 1.0,
+              "flagged_at_99pct": 0.0
+            },
+            "motor_acc_only": {
+              "auroc": 0.2653472222222223,
+              "fpr95": 1.0,
+              "flagged_at_99pct": 0.12
+            },
+            "adi_cbm_acc_only": {
+              "auroc": 0.1467013888888889,
+              "fpr95": 1.0,
+              "flagged_at_99pct": 0.0
+            },
+            "fault_stuck": {
+              "auroc": 0.32129929900419285,
+              "fpr95": 1.0,
+              "flagged_at_99pct": 0.1320754716981132
+            },
+            "fault_zero_output": {
+              "auroc": 0.1467013888888889,
+              "fpr95": 1.0,
+              "flagged_at_99pct": 0.0
+            },
+            "fault_noise_burst": {
+              "auroc": 0.7299610193920335,
+              "fpr95": 0.6814236111111112,
+              "flagged_at_99pct": 0.11320754716981132
+            },
+            "fault_spikes": {
+              "auroc": 0.8039873231132074,
+              "fpr95": 0.6814236111111112,
+              "flagged_at_99pct": 0.42452830188679247
+            }
+          },
+          "mean_auroc": 0.3658141471997604
+        },
+        "mc_dropout": {
+          "id_test_acc": 1.0,
+          "id_test_ece": 9.894371032714844e-06,
+          "field_normal_abnormal_rate": 0.0,
+          "field_normal_unknown_rate": 0.005,
+          "ood": {
+            "uav_6dof": {
+              "auroc": 0.4544965277777778,
+              "fpr95": 0.9348958333333334,
+              "flagged_at_99pct": 0.015
+            },
+            "motor_acc_only": {
+              "auroc": 0.5142664930555556,
+              "fpr95": 0.9140625,
+              "flagged_at_99pct": 0.12
+            },
+            "adi_cbm_acc_only": {
+              "auroc": 0.45738498263888894,
+              "fpr95": 0.9019097222222222,
+              "flagged_at_99pct": 0.03
+            },
+            "fault_stuck": {
+              "auroc": 0.5728920990566038,
+              "fpr95": 0.9131944444444444,
+              "flagged_at_99pct": 0.18867924528301888
+            },
+            "fault_zero_output": {
+              "auroc": 0.4162326388888889,
+              "fpr95": 0.9192708333333334,
+              "flagged_at_99pct": 0.009433962264150943
+            },
+            "fault_noise_burst": {
+              "auroc": 0.6342374213836478,
+              "fpr95": 0.9140625,
+              "flagged_at_99pct": 0.11320754716981132
+            },
+            "fault_spikes": {
+              "auroc": 0.7166945099580713,
+              "fpr95": 0.9175347222222222,
+              "flagged_at_99pct": 0.4339622641509434
+            }
+          },
+          "mean_auroc": 0.5380292389656335
+        },
+        "deep_ensemble": {
+          "id_test_acc": 1.0,
+          "id_test_ece": 4.708766937255859e-06,
+          "field_normal_abnormal_rate": 0.0,
+          "field_normal_unknown_rate": 0.0,
+          "ood": {
+            "uav_6dof": {
+              "auroc": 0.1372829861111111,
+              "fpr95": 0.9618055555555556,
+              "flagged_at_99pct": 0.0
+            },
+            "motor_acc_only": {
+              "auroc": 0.4089626736111111,
+              "fpr95": 0.9618055555555556,
+              "flagged_at_99pct": 0.145
+            },
+            "adi_cbm_acc_only": {
+              "auroc": 0.13585069444444442,
+              "fpr95": 0.9618055555555556,
+              "flagged_at_99pct": 0.0
+            },
+            "fault_stuck": {
+              "auroc": 0.3803721174004193,
+              "fpr95": 0.9618055555555556,
+              "flagged_at_99pct": 0.2830188679245283
+            },
+            "fault_zero_output": {
+              "auroc": 0.13585069444444442,
+              "fpr95": 0.9618055555555556,
+              "flagged_at_99pct": 0.0
+            },
+            "fault_noise_burst": {
+              "auroc": 0.7375606001048217,
+              "fpr95": 0.7664930555555556,
+              "flagged_at_99pct": 0.16037735849056603
+            },
+            "fault_spikes": {
+              "auroc": 0.7350178524633123,
+              "fpr95": 0.9921875,
+              "flagged_at_99pct": 0.41509433962264153
+            }
+          },
+          "mean_auroc": 0.3815568026542378
+        },
+        "mahalanobis": {
+          "id_test_acc": 1.0,
+          "id_test_ece": 5.364418029785156e-06,
+          "field_normal_abnormal_rate": 0.0,
+          "field_normal_unknown_rate": 0.0,
+          "ood": {
+            "uav_6dof": {
+              "auroc": 0.7135416666666667,
+              "fpr95": 0.4331597222222222,
+              "flagged_at_99pct": 0.0
+            },
+            "motor_acc_only": {
+              "auroc": 0.7521875,
+              "fpr95": 0.4331597222222222,
+              "flagged_at_99pct": 0.115
+            },
+            "adi_cbm_acc_only": {
+              "auroc": 0.7135416666666667,
+              "fpr95": 0.4331597222222222,
+              "flagged_at_99pct": 0.0
+            },
+            "fault_stuck": {
+              "auroc": 0.757452175052411,
+              "fpr95": 0.4331597222222222,
+              "flagged_at_99pct": 0.1509433962264151
+            },
+            "fault_zero_output": {
+              "auroc": 0.7135416666666667,
+              "fpr95": 0.4331597222222222,
+              "flagged_at_99pct": 0.0
+            },
+            "fault_noise_burst": {
+              "auroc": 0.5197073178721174,
+              "fpr95": 1.0,
+              "flagged_at_99pct": 0.05660377358490566
+            },
+            "fault_spikes": {
+              "auroc": 0.6506731525157232,
+              "fpr95": 1.0,
+              "flagged_at_99pct": 0.39622641509433965
+            }
+          },
+          "mean_auroc": 0.6886635922057502
+        },
+        "bsngp": {
+          "id_test_acc": 1.0,
+          "id_test_ece": 0.013418992505825494,
+          "field_normal_abnormal_rate": 0.0,
+          "field_normal_unknown_rate": 0.0025,
+          "ood": {
+            "uav_6dof": {
+              "auroc": 0.984450954861111,
+              "fpr95": 0.03125,
+              "flagged_at_99pct": 0.89
+            },
+            "motor_acc_only": {
+              "auroc": 0.7285720486111111,
+              "fpr95": 0.8663194444444444,
+              "flagged_at_99pct": 0.3
+            },
+            "adi_cbm_acc_only": {
+              "auroc": 1.0,
+              "fpr95": 0.0,
+              "flagged_at_99pct": 1.0
+            },
+            "fault_stuck": {
+              "auroc": 0.99994267557652,
+              "fpr95": 0.0,
+              "flagged_at_99pct": 1.0
+            },
+            "fault_zero_output": {
+              "auroc": 1.0,
+              "fpr95": 0.0,
+              "flagged_at_99pct": 1.0
+            },
+            "fault_noise_burst": {
+              "auroc": 0.5605345911949686,
+              "fpr95": 0.8758680555555556,
+              "flagged_at_99pct": 0.02830188679245283
+            },
+            "fault_spikes": {
+              "auroc": 0.6872051886792453,
+              "fpr95": 0.7829861111111112,
+              "flagged_at_99pct": 0.3867924528301887
+            }
+          },
+          "mean_auroc": 0.851529351274708
+        }
+      }
+    ],
+    "ood_sets": [
+      "uav_6dof",
+      "motor_acc_only",
+      "adi_cbm_acc_only",
+      "fault_stuck",
+      "fault_zero_output",
+      "fault_noise_burst",
+      "fault_spikes"
+    ],
+    "hw": {
+      "deterministic": {
+        "cycles": 1349,
+        "passes": 1,
+        "weight_bits": 5160,
+        "multipliers": 1,
+        "note": "estimate"
+      },
+      "mc_dropout": {
+        "cycles": 5073,
+        "passes": 20,
+        "weight_bits": 5160,
+        "multipliers": 1,
+        "note": "estimate; L1-L2 shared, L3+head repeated; needs an on-chip RNG"
+      },
+      "deep_ensemble": {
+        "cycles": 6745,
+        "passes": 5,
+        "weight_bits": 25800,
+        "multipliers": 1,
+        "note": "estimate; M full networks run sequentially"
+      },
+      "mahalanobis": {
+        "cycles": 1417,
+        "passes": 1,
+        "weight_bits": 22568,
+        "multipliers": 33,
+        "note": "estimate; 32 parallel MACs for (h-mu)^T P (h-mu)"
+      },
+      "bsngp": {
+        "cycles": 1971,
+        "passes": 1,
+        "weight_bits": 35872,
+        "multipliers": 19,
+        "note": "measured in RTL simulation"
+      }
+    }
+  },
+  "original": {
+    "per_seed": [
+      {
+        "deterministic": {
+          "id_test_acc": 1.0,
+          "id_test_ece": 0.0005701780319213867,
+          "field_normal_abnormal_rate": 0.83625,
+          "field_normal_unknown_rate": 0.9975,
+          "ood": {
+            "uav_6dof": {
+              "auroc": 0.3942274305555556,
+              "fpr95": 0.7916666666666666,
+              "flagged_at_99pct": 0.15
+            },
+            "motor_acc_only": {
+              "auroc": 0.9998784722222223,
+              "fpr95": 0.0,
+              "flagged_at_99pct": 1.0
+            },
+            "adi_cbm_acc_only": {
+              "auroc": 0.00868055555555558,
+              "fpr95": 1.0,
+              "flagged_at_99pct": 0.0
+            },
+            "fault_stuck": {
+              "auroc": 0.4214982966457023,
+              "fpr95": 1.0,
+              "flagged_at_99pct": 0.2169811320754717
+            },
+            "fault_zero_output": {
+              "auroc": 1.0,
+              "fpr95": 0.0,
+              "flagged_at_99pct": 1.0
+            },
+            "fault_noise_burst": {
+              "auroc": 0.9978708071278827,
+              "fpr95": 0.020833333333333332,
+              "flagged_at_99pct": 0.9245283018867925
+            },
+            "fault_axis_swap": {
+              "auroc": 0.6707612683438156,
+              "fpr95": 0.7916666666666666,
+              "flagged_at_99pct": 0.5660377358490566
+            },
+            "fault_spikes": {
+              "auroc": 0.9260187368972747,
+              "fpr95": 0.3888888888888889,
+              "flagged_at_99pct": 0.6320754716981132
+            }
+          },
+          "mean_auroc": 0.677366945918501
+        },
+        "mc_dropout": {
+          "id_test_acc": 1.0,
+          "id_test_ece": 0.0004659295082092285,
+          "field_normal_abnormal_rate": 1.0,
+          "field_normal_unknown_rate": 0.00125,
+          "ood": {
+            "uav_6dof": {
+              "auroc": 0.40958333333333335,
+              "fpr95": 0.9895833333333334,
+              "flagged_at_99pct": 0.07
+            },
+            "motor_acc_only": {
+              "auroc": 0.3258333333333333,
+              "fpr95": 0.9756944444444444,
+              "flagged_at_99pct": 0.0
+            },
+            "adi_cbm_acc_only": {
+              "auroc": 0.28999131944444445,
+              "fpr95": 0.9861111111111112,
+              "flagged_at_99pct": 0.0
+            },
+            "fault_stuck": {
+              "auroc": 0.4828681865828092,
+              "fpr95": 0.9756944444444444,
+              "flagged_at_99pct": 0.2169811320754717
+            },
+            "fault_zero_output": {
+              "auroc": 0.32897667714884693,
+              "fpr95": 0.9895833333333334,
+              "flagged_at_99pct": 0.0
+            },
+            "fault_noise_burst": {
+              "auroc": 0.9412015199161425,
+              "fpr95": 0.24305555555555555,
+              "flagged_at_99pct": 0.5188679245283019
+            },
+            "fault_axis_swap": {
+              "auroc": 0.6152712264150944,
+              "fpr95": 0.9861111111111112,
+              "flagged_at_99pct": 0.2358490566037736
+            },
+            "fault_spikes": {
+              "auroc": 0.8511202830188679,
+              "fpr95": 0.7118055555555556,
+              "flagged_at_99pct": 0.2830188679245283
+            }
+          },
+          "mean_auroc": 0.530605734899109
+        },
+        "deep_ensemble": {
+          "id_test_acc": 1.0,
+          "id_test_ece": 0.0006508827209472656,
+          "field_normal_abnormal_rate": 1.0,
+          "field_normal_unknown_rate": 0.99875,
+          "ood": {
+            "uav_6dof": {
+              "auroc": 0.28953125,
+              "fpr95": 0.9652777777777778,
+              "flagged_at_99pct": 0.21
+            },
+            "motor_acc_only": {
+              "auroc": 0.9930208333333332,
+              "fpr95": 0.03819444444444445,
+              "flagged_at_99pct": 0.885
+            },
+            "adi_cbm_acc_only": {
+              "auroc": 0.08131944444444449,
+              "fpr95": 0.9201388888888888,
+              "flagged_at_99pct": 0.0
+            },
+            "fault_stuck": {
+              "auroc": 0.5450406184486374,
+              "fpr95": 0.9652777777777778,
+              "flagged_at_99pct": 0.5
+            },
+            "fault_zero_output": {
+              "auroc": 1.0,
+              "fpr95": 0.0,
+              "flagged_at_99pct": 1.0
+            },
+            "fault_noise_burst": {
+              "auroc": 0.9858818134171907,
+              "fpr95": 0.06597222222222222,
+              "flagged_at_99pct": 0.8113207547169812
+            },
+            "fault_axis_swap": {
+              "auroc": 0.5811058700209644,
+              "fpr95": 0.9652777777777778,
+              "flagged_at_99pct": 0.5660377358490566
+            },
+            "fault_spikes": {
+              "auroc": 0.8574423480083858,
+              "fpr95": 0.6805555555555556,
+              "flagged_at_99pct": 0.27358490566037735
+            }
+          },
+          "mean_auroc": 0.6666677722091194
+        },
+        "mahalanobis": {
+          "id_test_acc": 1.0,
+          "id_test_ece": 0.0005701780319213867,
+          "field_normal_abnormal_rate": 0.83625,
+          "field_normal_unknown_rate": 1.0,
+          "ood": {
+            "uav_6dof": {
+              "auroc": 0.24299479166666668,
+              "fpr95": 0.9826388888888888,
+              "flagged_at_99pct": 0.14
+            },
+            "motor_acc_only": {
+              "auroc": 0.9997395833333333,
+              "fpr95": 0.0,
+              "flagged_at_99pct": 0.995
+            },
+            "adi_cbm_acc_only": {
+              "auroc": 0.00868055555555558,
+              "fpr95": 1.0,
+              "flagged_at_99pct": 0.0
+            },
+            "fault_stuck": {
+              "auroc": 0.34966260482180295,
+              "fpr95": 1.0,
+              "flagged_at_99pct": 0.29245283018867924
+            },
+            "fault_zero_output": {
+              "auroc": 1.0,
+              "fpr95": 0.0,
+              "flagged_at_99pct": 1.0
+            },
+            "fault_noise_burst": {
+              "auroc": 0.9856852725366876,
+              "fpr95": 0.10069444444444445,
+              "flagged_at_99pct": 0.8490566037735849
+            },
+            "fault_axis_swap": {
+              "auroc": 0.5878865303983227,
+              "fpr95": 0.9826388888888888,
+              "flagged_at_99pct": 0.5660377358490566
+            },
+            "fault_spikes": {
+              "auroc": 0.8597844601677149,
+              "fpr95": 0.5590277777777778,
+              "flagged_at_99pct": 0.5188679245283019
+            }
+          },
+          "mean_auroc": 0.6293042248100105
+        },
+        "bsngp": {
+          "id_test_acc": 1.0,
+          "id_test_ece": 0.055129921158960156,
+          "field_normal_abnormal_rate": 1.0,
+          "field_normal_unknown_rate": 0.9875,
+          "ood": {
+            "uav_6dof": {
+              "auroc": 0.9996006944444444,
+              "fpr95": 0.003472222222222222,
+              "flagged_at_99pct": 0.995
+            },
+            "motor_acc_only": {
+              "auroc": 0.9961111111111112,
+              "fpr95": 0.010416666666666666,
+              "flagged_at_99pct": 0.95
+            },
+            "adi_cbm_acc_only": {
+              "auroc": 1.0,
+              "fpr95": 0.0,
+              "flagged_at_99pct": 1.0
+            },
+            "fault_stuck": {
+              "auroc": 1.0,
+              "fpr95": 0.0,
+              "flagged_at_99pct": 1.0
+            },
+            "fault_zero_output": {
+              "auroc": 1.0,
+              "fpr95": 0.0,
+              "flagged_at_99pct": 1.0
+            },
+            "fault_noise_burst": {
+              "auroc": 0.900009827044025,
+              "fpr95": 0.4652777777777778,
+              "flagged_at_99pct": 0.32075471698113206
+            },
+            "fault_axis_swap": {
+              "auroc": 0.9858490566037736,
+              "fpr95": 0.0625,
+              "flagged_at_99pct": 0.660377358490566
+            },
+            "fault_spikes": {
+              "auroc": 0.8966194968553459,
+              "fpr95": 0.6111111111111112,
+              "flagged_at_99pct": 0.4716981132075472
+            }
+          },
+          "mean_auroc": 0.9722737732573375
+        }
+      },
+      {
+        "deterministic": {
+          "id_test_acc": 1.0,
+          "id_test_ece": 0.0006029605865478516,
+          "field_normal_abnormal_rate": 1.0,
+          "field_normal_unknown_rate": 0.0,
+          "ood": {
+            "uav_6dof": {
+              "auroc": 0.24916666666666668,
+              "fpr95": 1.0,
+              "flagged_at_99pct": 0.145
+            },
+            "motor_acc_only": {
+              "auroc": 0.2847309027777778,
+              "fpr95": 0.8993055555555556,
+              "flagged_at_99pct": 0.03
+            },
+            "adi_cbm_acc_only": {
+              "auroc": 0.10590277777777779,
+              "fpr95": 0.8993055555555556,
+              "flagged_at_99pct": 0.0
+            },
+            "fault_stuck": {
+              "auroc": 0.38092898322851154,
+              "fpr95": 1.0,
+              "flagged_at_99pct": 0.2641509433962264
+            },
+            "fault_zero_output": {
+              "auroc": 0.10590277777777779,
+              "fpr95": 0.8993055555555556,
+              "flagged_at_99pct": 0.0
+            },
+            "fault_noise_burst": {
+              "auroc": 0.9642295597484276,
+              "fpr95": 0.1736111111111111,
+              "flagged_at_99pct": 0.6792452830188679
+            },
+            "fault_axis_swap": {
+              "auroc": 0.577109538784067,
+              "fpr95": 1.0,
+              "flagged_at_99pct": 0.5566037735849056
+            },
+            "fault_spikes": {
+              "auroc": 0.8133680555555556,
+              "fpr95": 0.6458333333333334,
+              "flagged_at_99pct": 0.16037735849056603
+            }
+          },
+          "mean_auroc": 0.4351674077895702
+        },
+        "mc_dropout": {
+          "id_test_acc": 1.0,
+          "id_test_ece": 0.0006570219993591309,
+          "field_normal_abnormal_rate": 1.0,
+          "field_normal_unknown_rate": 0.0,
+          "ood": {
+            "uav_6dof": {
+              "auroc": 0.3345138888888889,
+              "fpr95": 0.9895833333333334,
+              "flagged_at_99pct": 0.08
+            },
+            "motor_acc_only": {
+              "auroc": 0.27869791666666666,
+              "fpr95": 0.9895833333333334,
+              "flagged_at_99pct": 0.0
+            },
+            "adi_cbm_acc_only": {
+              "auroc": 0.2619097222222222,
+              "fpr95": 0.9895833333333334,
+              "flagged_at_99pct": 0.0
+            },
+            "fault_stuck": {
+              "auroc": 0.49597091194968557,
+              "fpr95": 0.96875,
+              "flagged_at_99pct": 0.24528301886792453
+            },
+            "fault_zero_output": {
+              "auroc": 0.25913915094339623,
+              "fpr95": 0.9930555555555556,
+              "flagged_at_99pct": 0.0
+            },
+            "fault_noise_burst": {
+              "auroc": 0.9769064465408805,
+              "fpr95": 0.07291666666666667,
+              "flagged_at_99pct": 0.8490566037735849
+            },
+            "fault_axis_swap": {
+              "auroc": 0.669123427672956,
+              "fpr95": 0.9618055555555556,
+              "flagged_at_99pct": 0.5660377358490566
+            },
+            "fault_spikes": {
+              "auroc": 0.8240303983228511,
+              "fpr95": 0.7569444444444444,
+              "flagged_at_99pct": 0.33962264150943394
+            }
+          },
+          "mean_auroc": 0.5125364829009433
+        },
+        "deep_ensemble": {
+          "id_test_acc": 1.0,
+          "id_test_ece": 0.0006303787231445312,
+          "field_normal_abnormal_rate": 1.0,
+          "field_normal_unknown_rate": 1.0,
+          "ood": {
+            "uav_6dof": {
+              "auroc": 0.9999479166666667,
+              "fpr95": 0.0,
+              "flagged_at_99pct": 1.0
+            },
+            "motor_acc_only": {
+              "auroc": 1.0,
+              "fpr95": 0.0,
+              "flagged_at_99pct": 1.0
+            },
+            "adi_cbm_acc_only": {
+              "auroc": 0.08329861111111114,
+              "fpr95": 0.9166666666666666,
+              "flagged_at_99pct": 0.0
+            },
+            "fault_stuck": {
+              "auroc": 0.5611897274633123,
+              "fpr95": 0.9826388888888888,
+              "flagged_at_99pct": 0.5283018867924528
+            },
+            "fault_zero_output": {
+              "auroc": 1.0,
+              "fpr95": 0.0,
+              "flagged_at_99pct": 1.0
+            },
+            "fault_noise_burst": {
+              "auroc": 0.9949226939203354,
+              "fpr95": 0.034722222222222224,
+              "flagged_at_99pct": 0.8962264150943396
+            },
+            "fault_axis_swap": {
+              "auroc": 0.5735718029350105,
+              "fpr95": 0.9826388888888888,
+              "flagged_at_99pct": 0.5660377358490566
+            },
+            "fault_spikes": {
+              "auroc": 0.8427345387840671,
+              "fpr95": 0.7013888888888888,
+              "flagged_at_99pct": 0.41509433962264153
+            }
+          },
+          "mean_auroc": 0.7569581613600629
+        },
+        "mahalanobis": {
+          "id_test_acc": 1.0,
+          "id_test_ece": 0.0006029605865478516,
+          "field_normal_abnormal_rate": 1.0,
+          "field_normal_unknown_rate": 0.0,
+          "ood": {
+            "uav_6dof": {
+              "auroc": 0.2775694444444444,
+              "fpr95": 0.9895833333333334,
+              "flagged_at_99pct": 0.18
+            },
+            "motor_acc_only": {
+              "auroc": 0.2653125,
+              "fpr95": 1.0,
+              "flagged_at_99pct": 0.04
+            },
+            "adi_cbm_acc_only": {
+              "auroc": 0.005208333333333315,
+              "fpr95": 1.0,
+              "flagged_at_99pct": 0.0
+            },
+            "fault_stuck": {
+              "auroc": 0.41063941299790363,
+              "fpr95": 1.0,
+              "flagged_at_99pct": 0.3490566037735849
+            },
+            "fault_zero_output": {
+              "auroc": 0.005208333333333315,
+              "fpr95": 1.0,
+              "flagged_at_99pct": 0.0
+            },
+            "fault_noise_burst": {
+              "auroc": 0.9409067085953878,
+              "fpr95": 0.3159722222222222,
+              "flagged_at_99pct": 0.5566037735849056
+            },
+            "fault_axis_swap": {
+              "auroc": 0.58104035639413,
+              "fpr95": 0.9895833333333334,
+              "flagged_at_99pct": 0.5377358490566038
+            },
+            "fault_spikes": {
+              "auroc": 0.7719962002096437,
+              "fpr95": 0.6979166666666666,
+              "flagged_at_99pct": 0.11320754716981132
+            }
+          },
+          "mean_auroc": 0.407235161163522
+        },
+        "bsngp": {
+          "id_test_acc": 1.0,
+          "id_test_ece": 0.04974121579504682,
+          "field_normal_abnormal_rate": 1.0,
+          "field_normal_unknown_rate": 1.0,
+          "ood": {
+            "uav_6dof": {
+              "auroc": 0.9964756944444444,
+              "fpr95": 0.0,
+              "flagged_at_99pct": 0.97
+            },
+            "motor_acc_only": {
+              "auroc": 1.0,
+              "fpr95": 0.0,
+              "flagged_at_99pct": 1.0
+            },
+            "adi_cbm_acc_only": {
+              "auroc": 1.0,
+              "fpr95": 0.0,
+              "flagged_at_99pct": 1.0
+            },
+            "fault_stuck": {
+              "auroc": 1.0,
+              "fpr95": 0.0,
+              "flagged_at_99pct": 1.0
+            },
+            "fault_zero_output": {
+              "auroc": 1.0,
+              "fpr95": 0.0,
+              "flagged_at_99pct": 1.0
+            },
+            "fault_noise_burst": {
+              "auroc": 0.9894523060796645,
+              "fpr95": 0.027777777777777776,
+              "flagged_at_99pct": 0.9056603773584906
+            },
+            "fault_axis_swap": {
+              "auroc": 1.0,
+              "fpr95": 0.0,
+              "flagged_at_99pct": 1.0
+            },
+            "fault_spikes": {
+              "auroc": 0.9629520440251572,
+              "fpr95": 0.25,
+              "flagged_at_99pct": 0.7830188679245284
+            }
+          },
+          "mean_auroc": 0.9936100055686583
+        }
+      },
+      {
+        "deterministic": {
+          "id_test_acc": 1.0,
+          "id_test_ece": 0.0004911422729492188,
+          "field_normal_abnormal_rate": 1.0,
+          "field_normal_unknown_rate": 0.2325,
+          "ood": {
+            "uav_6dof": {
+              "auroc": 0.2795399305555556,
+              "fpr95": 0.9618055555555556,
+              "flagged_at_99pct": 0.18
+            },
+            "motor_acc_only": {
+              "auroc": 0.8698958333333333,
+              "fpr95": 0.4583333333333333,
+              "flagged_at_99pct": 0.255
+            },
+            "adi_cbm_acc_only": {
+              "auroc": 0.004652777777777767,
+              "fpr95": 1.0,
+              "flagged_at_99pct": 0.0
+            },
+            "fault_stuck": {
+              "auroc": 0.30899502096436054,
+              "fpr95": 1.0,
+              "flagged_at_99pct": 0.18867924528301888
+            },
+            "fault_zero_output": {
+              "auroc": 0.2743055555555556,
+              "fpr95": 0.7256944444444444,
+              "flagged_at_99pct": 0.0
+            },
+            "fault_noise_burst": {
+              "auroc": 0.9733687106918238,
+              "fpr95": 0.125,
+              "flagged_at_99pct": 0.7924528301886793
+            },
+            "fault_axis_swap": {
+              "auroc": 0.5984342243186583,
+              "fpr95": 0.9618055555555556,
+              "flagged_at_99pct": 0.5660377358490566
+            },
+            "fault_spikes": {
+              "auroc": 0.8649436582809225,
+              "fpr95": 0.6284722222222222,
+              "flagged_at_99pct": 0.3018867924528302
+            }
+          },
+          "mean_auroc": 0.5217669639347484
+        },
+        "mc_dropout": {
+          "id_test_acc": 1.0,
+          "id_test_ece": 0.0004819035530090332,
+          "field_normal_abnormal_rate": 0.9975,
+          "field_normal_unknown_rate": 0.585,
+          "ood": {
+            "uav_6dof": {
+              "auroc": 0.4345659722222222,
+              "fpr95": 0.9965277777777778,
+              "flagged_at_99pct": 0.105
+            },
+            "motor_acc_only": {
+              "auroc": 0.6738888888888889,
+              "fpr95": 0.9201388888888888,
+              "flagged_at_99pct": 0.105
+            },
+            "adi_cbm_acc_only": {
+              "auroc": 1.0,
+              "fpr95": 0.0,
+              "flagged_at_99pct": 1.0
+            },
+            "fault_stuck": {
+              "auroc": 0.5267623165618449,
+              "fpr95": 0.96875,
+              "flagged_at_99pct": 0.2169811320754717
+            },
+            "fault_zero_output": {
+              "auroc": 0.32452175052410903,
+              "fpr95": 0.9965277777777778,
+              "flagged_at_99pct": 0.009433962264150943
+            },
+            "fault_noise_burst": {
+              "auroc": 0.9975104821802936,
+              "fpr95": 0.010416666666666666,
+              "flagged_at_99pct": 0.9622641509433962
+            },
+            "fault_axis_swap": {
+              "auroc": 0.6878603249475892,
+              "fpr95": 0.9618055555555556,
+              "flagged_at_99pct": 0.5660377358490566
+            },
+            "fault_spikes": {
+              "auroc": 0.8875131027253669,
+              "fpr95": 0.5763888888888888,
+              "flagged_at_99pct": 0.5849056603773585
+            }
+          },
+          "mean_auroc": 0.6915778547562894
+        },
+        "deep_ensemble": {
+          "id_test_acc": 1.0,
+          "id_test_ece": 0.0005505084991455078,
+          "field_normal_abnormal_rate": 1.0,
+          "field_normal_unknown_rate": 0.75875,
+          "ood": {
+            "uav_6dof": {
+              "auroc": 0.9987152777777777,
+              "fpr95": 0.0,
+              "flagged_at_99pct": 0.985
+            },
+            "motor_acc_only": {
+              "auroc": 0.9371006944444444,
+              "fpr95": 0.2847222222222222,
+              "flagged_at_99pct": 0.53
+            },
+            "adi_cbm_acc_only": {
+              "auroc": 1.0,
+              "fpr95": 0.0,
+              "flagged_at_99pct": 1.0
+            },
+            "fault_stuck": {
+              "auroc": 0.54395964360587,
+              "fpr95": 0.9861111111111112,
+              "flagged_at_99pct": 0.5094339622641509
+            },
+            "fault_zero_output": {
+              "auroc": 1.0,
+              "fpr95": 0.0,
+              "flagged_at_99pct": 1.0
+            },
+            "fault_noise_burst": {
+              "auroc": 0.9999672431865828,
+              "fpr95": 0.0,
+              "flagged_at_99pct": 1.0
+            },
+            "fault_axis_swap": {
+              "auroc": 0.5720649895178197,
+              "fpr95": 0.9861111111111112,
+              "flagged_at_99pct": 0.5660377358490566
+            },
+            "fault_spikes": {
+              "auroc": 0.903662211740042,
+              "fpr95": 0.46875,
+              "flagged_at_99pct": 0.5943396226415094
+            }
+          },
+          "mean_auroc": 0.8694337575340672
+        },
+        "mahalanobis": {
+          "id_test_acc": 1.0,
+          "id_test_ece": 0.0004911422729492188,
+          "field_normal_abnormal_rate": 1.0,
+          "field_normal_unknown_rate": 0.2575,
+          "ood": {
+            "uav_6dof": {
+              "auroc": 0.2569704861111112,
+              "fpr95": 0.9930555555555556,
+              "flagged_at_99pct": 0.175
+            },
+            "motor_acc_only": {
+              "auroc": 0.9222743055555556,
+              "fpr95": 0.3333333333333333,
+              "flagged_at_99pct": 0.465
+            },
+            "adi_cbm_acc_only": {
+              "auroc": 0.009600694444444434,
+              "fpr95": 1.0,
+              "flagged_at_99pct": 0.0
+            },
+            "fault_stuck": {
+              "auroc": 0.30897864255765206,
+              "fpr95": 1.0,
+              "flagged_at_99pct": 0.2830188679245283
+            },
+            "fault_zero_output": {
+              "auroc": 0.35416666666666663,
+              "fpr95": 0.6458333333333334,
+              "flagged_at_99pct": 0.0
+            },
+            "fault_noise_burst": {
+              "auroc": 0.9588901991614256,
+              "fpr95": 0.2361111111111111,
+              "flagged_at_99pct": 0.6132075471698113
+            },
+            "fault_axis_swap": {
+              "auroc": 0.5831367924528302,
+              "fpr95": 0.9930555555555556,
+              "flagged_at_99pct": 0.5566037735849056
+            },
+            "fault_spikes": {
+              "auroc": 0.7768114517819706,
+              "fpr95": 0.6770833333333334,
+              "flagged_at_99pct": 0.11320754716981132
+            }
+          },
+          "mean_auroc": 0.521353654841457
+        },
+        "bsngp": {
+          "id_test_acc": 1.0,
+          "id_test_ece": 0.05372397253374852,
+          "field_normal_abnormal_rate": 1.0,
+          "field_normal_unknown_rate": 1.0,
+          "ood": {
+            "uav_6dof": {
+              "auroc": 0.9978125,
+              "fpr95": 0.006944444444444444,
+              "flagged_at_99pct": 0.965
+            },
+            "motor_acc_only": {
+              "auroc": 0.9996701388888889,
+              "fpr95": 0.0,
+              "flagged_at_99pct": 0.995
+            },
+            "adi_cbm_acc_only": {
+              "auroc": 1.0,
+              "fpr95": 0.0,
+              "flagged_at_99pct": 1.0
+            },
+            "fault_stuck": {
+              "auroc": 1.0,
+              "fpr95": 0.0,
+              "flagged_at_99pct": 1.0
+            },
+            "fault_zero_output": {
+              "auroc": 1.0,
+              "fpr95": 0.0,
+              "flagged_at_99pct": 1.0
+            },
+            "fault_noise_burst": {
+              "auroc": 0.9644916142557652,
+              "fpr95": 0.1597222222222222,
+              "flagged_at_99pct": 0.6886792452830188
+            },
+            "fault_axis_swap": {
+              "auroc": 0.9944640985324947,
+              "fpr95": 0.03125,
+              "flagged_at_99pct": 0.9245283018867925
+            },
+            "fault_spikes": {
+              "auroc": 0.9175183438155136,
+              "fpr95": 0.4444444444444444,
+              "flagged_at_99pct": 0.5377358490566038
+            }
+          },
+          "mean_auroc": 0.9842445869365828
+        }
+      },
+      {
+        "deterministic": {
+          "id_test_acc": 1.0,
+          "id_test_ece": 0.0006120204925537109,
+          "field_normal_abnormal_rate": 0.95875,
+          "field_normal_unknown_rate": 0.96875,
+          "ood": {
+            "uav_6dof": {
+              "auroc": 0.5046961805555557,
+              "fpr95": 1.0,
+              "flagged_at_99pct": 0.055
+            },
+            "motor_acc_only": {
+              "auroc": 0.9999479166666666,
+              "fpr95": 0.0,
+              "flagged_at_99pct": 1.0
+            },
+            "adi_cbm_acc_only": {
+              "auroc": 0.20833333333333331,
+              "fpr95": 0.8090277777777778,
+              "flagged_at_99pct": 0.0
+            },
+            "fault_stuck": {
+              "auroc": 0.30653825995807127,
+              "fpr95": 1.0,
+              "flagged_at_99pct": 0.1509433962264151
+            },
+            "fault_zero_output": {
+              "auroc": 0.02777777777777779,
+              "fpr95": 1.0,
+              "flagged_at_99pct": 0.0
+            },
+            "fault_noise_burst": {
+              "auroc": 0.9981983752620546,
+              "fpr95": 0.010416666666666666,
+              "flagged_at_99pct": 0.9622641509433962
+            },
+            "fault_axis_swap": {
+              "auroc": 0.5780922431865828,
+              "fpr95": 1.0,
+              "flagged_at_99pct": 0.5660377358490566
+            },
+            "fault_spikes": {
+              "auroc": 0.8680883123689727,
+              "fpr95": 0.8298611111111112,
+              "flagged_at_99pct": 0.6037735849056604
+            }
+          },
+          "mean_auroc": 0.5614590498886268
+        },
+        "mc_dropout": {
+          "id_test_acc": 1.0,
+          "id_test_ece": 0.0005611777305603027,
+          "field_normal_abnormal_rate": 0.98125,
+          "field_normal_unknown_rate": 0.59875,
+          "ood": {
+            "uav_6dof": {
+              "auroc": 0.6119791666666667,
+              "fpr95": 0.9201388888888888,
+              "flagged_at_99pct": 0.135
+            },
+            "motor_acc_only": {
+              "auroc": 0.8768055555555556,
+              "fpr95": 0.5347222222222222,
+              "flagged_at_99pct": 0.405
+            },
+            "adi_cbm_acc_only": {
+              "auroc": 0.35661458333333335,
+              "fpr95": 0.9861111111111112,
+              "flagged_at_99pct": 0.0
+            },
+            "fault_stuck": {
+              "auroc": 0.5454337002096437,
+              "fpr95": 0.9583333333333334,
+              "flagged_at_99pct": 0.19811320754716982
+            },
+            "fault_zero_output": {
+              "auroc": 0.6328288784067087,
+              "fpr95": 0.8645833333333334,
+              "flagged_at_99pct": 0.0
+            },
+            "fault_noise_burst": {
+              "auroc": 0.9750065513626834,
+              "fpr95": 0.1875,
+              "flagged_at_99pct": 0.8584905660377359
+            },
+            "fault_axis_swap": {
+              "auroc": 0.7696213312368974,
+              "fpr95": 0.8576388888888888,
+              "flagged_at_99pct": 0.46226415094339623
+            },
+            "fault_spikes": {
+              "auroc": 0.8740500524109015,
+              "fpr95": 0.4861111111111111,
+              "flagged_at_99pct": 0.4339622641509434
+            }
+          },
+          "mean_auroc": 0.7052924773977989
+        },
+        "deep_ensemble": {
+          "id_test_acc": 1.0,
+          "id_test_ece": 0.0005145072937011719,
+          "field_normal_abnormal_rate": 0.9925,
+          "field_normal_unknown_rate": 1.0,
+          "ood": {
+            "uav_6dof": {
+              "auroc": 0.4539930555555555,
+              "fpr95": 0.9270833333333334,
+              "flagged_at_99pct": 0.22
+            },
+            "motor_acc_only": {
+              "auroc": 1.0,
+              "fpr95": 0.0,
+              "flagged_at_99pct": 1.0
+            },
+            "adi_cbm_acc_only": {
+              "auroc": 1.0,
+              "fpr95": 0.0,
+              "flagged_at_99pct": 1.0
+            },
+            "fault_stuck": {
+              "auroc": 0.5560141509433962,
+              "fpr95": 0.9618055555555556,
+              "flagged_at_99pct": 0.5
+            },
+            "fault_zero_output": {
+              "auroc": 1.0,
+              "fpr95": 0.0,
+              "flagged_at_99pct": 1.0
+            },
+            "fault_noise_burst": {
+              "auroc": 0.9998034591194969,
+              "fpr95": 0.0,
+              "flagged_at_99pct": 0.9905660377358491
+            },
+            "fault_axis_swap": {
+              "auroc": 0.5826126834381551,
+              "fpr95": 0.9618055555555556,
+              "flagged_at_99pct": 0.5660377358490566
+            },
+            "fault_spikes": {
+              "auroc": 0.9054310796645703,
+              "fpr95": 0.6354166666666666,
+              "flagged_at_99pct": 0.5943396226415094
+            }
+          },
+          "mean_auroc": 0.8122318035901468
+        },
+        "mahalanobis": {
+          "id_test_acc": 1.0,
+          "id_test_ece": 0.0006120204925537109,
+          "field_normal_abnormal_rate": 0.95875,
+          "field_normal_unknown_rate": 0.98,
+          "ood": {
+            "uav_6dof": {
+              "auroc": 0.8200086805555556,
+              "fpr95": 0.9652777777777778,
+              "flagged_at_99pct": 0.55
+            },
+            "motor_acc_only": {
+              "auroc": 0.9999305555555555,
+              "fpr95": 0.0,
+              "flagged_at_99pct": 1.0
+            },
+            "adi_cbm_acc_only": {
+              "auroc": 0.017361111111111105,
+              "fpr95": 1.0,
+              "flagged_at_99pct": 0.0
+            },
+            "fault_stuck": {
+              "auroc": 0.2846567085953878,
+              "fpr95": 1.0,
+              "flagged_at_99pct": 0.20754716981132076
+            },
+            "fault_zero_output": {
+              "auroc": 0.0625,
+              "fpr95": 0.9652777777777778,
+              "flagged_at_99pct": 0.0
+            },
+            "fault_noise_burst": {
+              "auroc": 0.9907625786163521,
+              "fpr95": 0.06597222222222222,
+              "flagged_at_99pct": 0.839622641509434
+            },
+            "fault_axis_swap": {
+              "auroc": 0.5926690251572327,
+              "fpr95": 0.9652777777777778,
+              "flagged_at_99pct": 0.5566037735849056
+            },
+            "fault_spikes": {
+              "auroc": 0.8290094339622642,
+              "fpr95": 0.7395833333333334,
+              "flagged_at_99pct": 0.36792452830188677
+            }
+          },
+          "mean_auroc": 0.5746122616941824
+        },
+        "bsngp": {
+          "id_test_acc": 1.0,
+          "id_test_ece": 0.05431822622711019,
+          "field_normal_abnormal_rate": 0.555,
+          "field_normal_unknown_rate": 1.0,
+          "ood": {
+            "uav_6dof": {
+              "auroc": 0.9969270833333334,
+              "fpr95": 0.0,
+              "flagged_at_99pct": 0.97
+            },
+            "motor_acc_only": {
+              "auroc": 1.0,
+              "fpr95": 0.0,
+              "flagged_at_99pct": 1.0
+            },
+            "adi_cbm_acc_only": {
+              "auroc": 1.0,
+              "fpr95": 0.0,
+              "flagged_at_99pct": 1.0
+            },
+            "fault_stuck": {
+              "auroc": 1.0,
+              "fpr95": 0.0,
+              "flagged_at_99pct": 1.0
+            },
+            "fault_zero_output": {
+              "auroc": 1.0,
+              "fpr95": 0.0,
+              "flagged_at_99pct": 1.0
+            },
+            "fault_noise_burst": {
+              "auroc": 0.9782167190775681,
+              "fpr95": 0.10069444444444445,
+              "flagged_at_99pct": 0.7547169811320755
+            },
+            "fault_axis_swap": {
+              "auroc": 0.9999344863731656,
+              "fpr95": 0.0,
+              "flagged_at_99pct": 1.0
+            },
+            "fault_spikes": {
+              "auroc": 0.9413653039832285,
+              "fpr95": 0.3854166666666667,
+              "flagged_at_99pct": 0.5849056603773585
+            }
+          },
+          "mean_auroc": 0.989555449095912
+        }
+      },
+      {
+        "deterministic": {
+          "id_test_acc": 1.0,
+          "id_test_ece": 0.0006369352340698242,
+          "field_normal_abnormal_rate": 1.0,
+          "field_normal_unknown_rate": 0.0,
+          "ood": {
+            "uav_6dof": {
+              "auroc": 0.2611024305555556,
+              "fpr95": 1.0,
+              "flagged_at_99pct": 0.175
+            },
+            "motor_acc_only": {
+              "auroc": 0.30051215277777776,
+              "fpr95": 0.7881944444444444,
+              "flagged_at_99pct": 0.0
+            },
+            "adi_cbm_acc_only": {
+              "auroc": 0.2621527777777778,
+              "fpr95": 0.7881944444444444,
+              "flagged_at_99pct": 0.0
+            },
+            "fault_stuck": {
+              "auroc": 0.3586707285115304,
+              "fpr95": 1.0,
+              "flagged_at_99pct": 0.2169811320754717
+            },
+            "fault_zero_output": {
+              "auroc": 0.2621527777777778,
+              "fpr95": 0.7881944444444444,
+              "flagged_at_99pct": 0.0
+            },
+            "fault_noise_burst": {
+              "auroc": 0.9981983752620545,
+              "fpr95": 0.0,
+              "flagged_at_99pct": 0.9622641509433962
+            },
+            "fault_axis_swap": {
+              "auroc": 0.5705581761006289,
+              "fpr95": 1.0,
+              "flagged_at_99pct": 0.5660377358490566
+            },
+            "fault_spikes": {
+              "auroc": 0.9020243710691824,
+              "fpr95": 0.5590277777777778,
+              "flagged_at_99pct": 0.6886792452830188
+            }
+          },
+          "mean_auroc": 0.48942147372903566
+        },
+        "mc_dropout": {
+          "id_test_acc": 1.0,
+          "id_test_ece": 0.0007385015487670898,
+          "field_normal_abnormal_rate": 1.0,
+          "field_normal_unknown_rate": 0.13375,
+          "ood": {
+            "uav_6dof": {
+              "auroc": 0.4839930555555556,
+              "fpr95": 0.9722222222222222,
+              "flagged_at_99pct": 0.18
+            },
+            "motor_acc_only": {
+              "auroc": 0.8463194444444445,
+              "fpr95": 0.7708333333333334,
+              "flagged_at_99pct": 0.435
+            },
+            "adi_cbm_acc_only": {
+              "auroc": 0.4171527777777778,
+              "fpr95": 0.9444444444444444,
+              "flagged_at_99pct": 0.015
+            },
+            "fault_stuck": {
+              "auroc": 0.5025222746331237,
+              "fpr95": 0.9618055555555556,
+              "flagged_at_99pct": 0.14150943396226415
+            },
+            "fault_zero_output": {
+              "auroc": 0.6079664570230607,
+              "fpr95": 0.8368055555555556,
+              "flagged_at_99pct": 0.0
+            },
+            "fault_noise_burst": {
+              "auroc": 0.9905332809224319,
+              "fpr95": 0.013888888888888888,
+              "flagged_at_99pct": 0.9339622641509434
+            },
+            "fault_axis_swap": {
+              "auroc": 0.7187172431865829,
+              "fpr95": 0.9756944444444444,
+              "flagged_at_99pct": 0.5660377358490566
+            },
+            "fault_spikes": {
+              "auroc": 0.8255372117400419,
+              "fpr95": 0.7395833333333334,
+              "flagged_at_99pct": 0.4716981132075472
+            }
+          },
+          "mean_auroc": 0.6740927181603774
+        },
+        "deep_ensemble": {
+          "id_test_acc": 1.0,
+          "id_test_ece": 0.0005204081535339355,
+          "field_normal_abnormal_rate": 1.0,
+          "field_normal_unknown_rate": 0.4325,
+          "ood": {
+            "uav_6dof": {
+              "auroc": 0.9992534722222222,
+              "fpr95": 0.0,
+              "flagged_at_99pct": 0.985
+            },
+            "motor_acc_only": {
+              "auroc": 0.8786979166666667,
+              "fpr95": 0.5833333333333334,
+              "flagged_at_99pct": 0.07
+            },
+            "adi_cbm_acc_only": {
+              "auroc": 1.0,
+              "fpr95": 0.0,
+              "flagged_at_99pct": 1.0
+            },
+            "fault_stuck": {
+              "auroc": 0.5303328092243187,
+              "fpr95": 0.9791666666666666,
+              "flagged_at_99pct": 0.5
+            },
+            "fault_zero_output": {
+              "auroc": 1.0,
+              "fpr95": 0.0,
+              "flagged_at_99pct": 1.0
+            },
+            "fault_noise_burst": {
+              "auroc": 0.9932193396226415,
+              "fpr95": 0.04513888888888889,
+              "flagged_at_99pct": 0.8301886792452831
+            },
+            "fault_axis_swap": {
+              "auroc": 0.5750458595387841,
+              "fpr95": 0.9791666666666666,
+              "flagged_at_99pct": 0.5660377358490566
+            },
+            "fault_spikes": {
+              "auroc": 0.8914111635220127,
+              "fpr95": 0.6388888888888888,
+              "flagged_at_99pct": 0.2830188679245283
+            }
+          },
+          "mean_auroc": 0.8584950700995807
+        },
+        "mahalanobis": {
+          "id_test_acc": 1.0,
+          "id_test_ece": 0.0006369352340698242,
+          "field_normal_abnormal_rate": 1.0,
+          "field_normal_unknown_rate": 0.0,
+          "ood": {
+            "uav_6dof": {
+              "auroc": 0.4284809027777778,
+              "fpr95": 0.8993055555555556,
+              "flagged_at_99pct": 0.2
+            },
+            "motor_acc_only": {
+              "auroc": 0.10419270833333333,
+              "fpr95": 1.0,
+              "flagged_at_99pct": 0.0
+            },
+            "adi_cbm_acc_only": {
+              "auroc": 0.05034722222222221,
+              "fpr95": 1.0,
+              "flagged_at_99pct": 0.0
+            },
+            "fault_stuck": {
+              "auroc": 0.3721337788259958,
+              "fpr95": 1.0,
+              "flagged_at_99pct": 0.2830188679245283
+            },
+            "fault_zero_output": {
+              "auroc": 0.05034722222222221,
+              "fpr95": 1.0,
+              "flagged_at_99pct": 0.0
+            },
+            "fault_noise_burst": {
+              "auroc": 0.9922038784067087,
+              "fpr95": 0.03819444444444445,
+              "flagged_at_99pct": 0.8584905660377359
+            },
+            "fault_axis_swap": {
+              "auroc": 0.6142557651991614,
+              "fpr95": 0.8993055555555556,
+              "flagged_at_99pct": 0.5660377358490566
+            },
+            "fault_spikes": {
+              "auroc": 0.8855149371069183,
+              "fpr95": 0.5277777777777778,
+              "flagged_at_99pct": 0.4056603773584906
+            }
+          },
+          "mean_auroc": 0.4371845518867925
+        },
+        "bsngp": {
+          "id_test_acc": 1.0,
+          "id_test_ece": 0.047486950705769304,
+          "field_normal_abnormal_rate": 1.0,
+          "field_normal_unknown_rate": 0.9825,
+          "ood": {
+            "uav_6dof": {
+              "auroc": 0.9984201388888889,
+              "fpr95": 0.0,
+              "flagged_at_99pct": 0.985
+            },
+            "motor_acc_only": {
+              "auroc": 0.9831597222222221,
+              "fpr95": 0.12152777777777778,
+              "flagged_at_99pct": 0.8
+            },
+            "adi_cbm_acc_only": {
+              "auroc": 1.0,
+              "fpr95": 0.0,
+              "flagged_at_99pct": 1.0
+            },
+            "fault_stuck": {
+              "auroc": 1.0,
+              "fpr95": 0.0,
+              "flagged_at_99pct": 1.0
+            },
+            "fault_zero_output": {
+              "auroc": 1.0,
+              "fpr95": 0.0,
+              "flagged_at_99pct": 1.0
+            },
+            "fault_noise_burst": {
+              "auroc": 0.9309158805031448,
+              "fpr95": 0.2881944444444444,
+              "flagged_at_99pct": 0.5377358490566038
+            },
+            "fault_axis_swap": {
+              "auroc": 1.0,
+              "fpr95": 0.0,
+              "flagged_at_99pct": 1.0
+            },
+            "fault_spikes": {
+              "auroc": 0.8334971174004193,
+              "fpr95": 0.625,
+              "flagged_at_99pct": 0.14150943396226415
+            }
+          },
+          "mean_auroc": 0.9682491073768345
+        }
+      }
+    ],
+    "ood_sets": [
+      "uav_6dof",
+      "motor_acc_only",
+      "adi_cbm_acc_only",
+      "fault_stuck",
+      "fault_zero_output",
+      "fault_noise_burst",
+      "fault_axis_swap",
+      "fault_spikes"
+    ],
+    "hw": {
+      "deterministic": {
+        "cycles": 1156,
+        "passes": 1,
+        "weight_bits": 5160,
+        "multipliers": 1,
+        "note": "estimate"
+      },
+      "mc_dropout": {
+        "cycles": 4880,
+        "passes": 20,
+        "weight_bits": 5160,
+        "multipliers": 1,
+        "note": "estimate; L1-L2 shared, L3+head repeated; needs an on-chip RNG"
+      },
+      "deep_ensemble": {
+        "cycles": 5780,
+        "passes": 5,
+        "weight_bits": 25800,
+        "multipliers": 1,
+        "note": "estimate; M full networks run sequentially"
+      },
+      "mahalanobis": {
+        "cycles": 1224,
+        "passes": 1,
+        "weight_bits": 22568,
+        "multipliers": 33,
+        "note": "estimate; 32 parallel MACs for (h-mu)^T P (h-mu)"
+      },
+      "bsngp": {
+        "cycles": 1778,
+        "passes": 1,
+        "weight_bits": 35872,
+        "multipliers": 19,
+        "note": "measured in RTL simulation"
+      }
+    }
+  }
+}
